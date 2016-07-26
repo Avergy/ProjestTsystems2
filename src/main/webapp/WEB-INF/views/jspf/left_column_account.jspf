@@ -1,0 +1,38 @@
+<link href="<c:url value="/resources/css/account_left.css"/>" rel='stylesheet' type='text/css'>
+<div class="container">
+    <div class="login-page">
+        <div class="account_grid">
+            <div class="col-md-6 account-left wow fadeInLeft">
+                <!--<div class="account-left">-->
+                <div class="grid_3 grid_5">
+                    <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+                        <ul id="myTab" class="nav nav-tabs" >
+                            <li role="presentation" class="active">
+                                <a href="#home" id="home-tab" data-toggle="tab" aria-controls="home"
+                                   aria-expanded="true">Personal info</a></li>
+                            <security:authorize access="hasRole('ROLE_ADMIN')">
+                                <li role="presentation" class="">
+                                    <a href="#profile" id="profile-tab" data-toggle="tab" aria-controls="profile"
+                                       aria-expanded="false">Admin features</a></li>
+                            </security:authorize>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="/user/account">Edit account detail</a></li>
+                                    <li class="list-group-item"><a href="/user/myOrderList">My orders</a></li>
+                                   <!-- <li class="list-group-item"><a href="/user/myAddressList">My address</a></li>-->
+                                </ul>
+                            </div>
+                            <security:authorize access="hasRole('ROLE_ADMIN')">
+                                <div class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                                    <li class="list-group-item"><a href="/admin/orderList">All orders</a></li>
+                                    <li class="list-group-item"><a href="/admin/statistics">Statistics</a></li>
+                                    <li class="list-group-item"><a href="/admin/addPhone">Add phone</a></li>
+                                    <li class="list-group-item"><a href="/admin/editBrandList">Edit brand list</a></li>
+                                </div>
+                            </security:authorize>
+                        </div>
+                    </div>
+                </div>
+            </div>

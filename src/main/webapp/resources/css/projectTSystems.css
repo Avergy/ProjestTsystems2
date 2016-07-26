@@ -1,0 +1,74 @@
+.phone_image {
+    height: 260px;
+    width: 260px;
+    float: left;
+}
+
+.phone_image_item {
+    height: 260px;
+    float: left;
+}
+.img-response{
+    max-width: 260px;
+    max-height: 260px;
+}
+
+
+/*--.account-left{
+    padding-left: 10%;
+    padding-right: 40%;
+    text-align: center;
+}
+
+.account-right{
+    padding-right: 20%;
+}
+--*/
+#login{
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+#edit_img{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+
+.logo {
+    max-height: 70px;
+}
+
+.img-cart{
+    max-width: 113px;
+    max-height: 113px;
+}
+
+.field {
+    clear: both;
+    line-height: 25px;
+}
+
+.item_phone_detail{
+    color: #fff;
+    background: #816263;
+    padding: 8px 10px;
+    border-radius: 2px;
+    margin: 20px 0 0;
+    display: inline-block;
+    font-size: 13px;
+}
+
+#create_order{
+    color: #fff;
+    background: #816263;
+    padding: 8px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 13px;
+}

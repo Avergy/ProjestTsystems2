@@ -1,0 +1,14 @@
+<!-- content-section-starts -->
+<div class="container">
+    <div class="products-page">
+        <div class="products">
+            <div class="product-listy">
+                <h2>our Products</h2>
+                <ul class="product-list">
+                    <li><a href="/phoneList/all">All phones</a></li>
+                    <c:forEach var="brand" items="${brandList}">
+                        <li><a href="/phoneList/${brand.brand}">${brand.brand}</a></li>
+                    </c:forEach>
+                </ul>
+            </div>
+        </div>

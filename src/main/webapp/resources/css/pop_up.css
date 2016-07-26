@@ -1,0 +1,54 @@
+#dialog{
+    font-family:verdana;
+    font-size:15px;
+}
+#dialog .link:hover {color:#fff; text-decoration:underline}
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+
+}
+#boxes .window {
+    float:right;
+
+    top:0px;
+    width:40px;
+    height:20px;
+    display:none;
+    pading: 20px;
+    overflow: hidden;
+}
+#boxes #dialog {
+    width:200px;
+    height:150px;
+    background-color:#ffffff;
+    text-align:center;
+    border: 5px #777 solid;
+}
+.top {
+    float:right;
+    width:200px;
+    height:30px;
+    margin: 0px;
+    padding: 0px;
+
+}
+.close {
+    float:right;
+
+    font-size: 35px;
+    font-weight: bold;
+    color: #332929;
+    text-shadow: 0 1px 0 #fff;
+}
+#dialog .content {
+    padding-top: 50px;
+    font-size: x-large;
+}
+
+#boxes {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
